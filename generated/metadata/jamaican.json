@@ -1,0 +1,339 @@
+{
+  "version": "1.0",
+  "source": "assets/alphabet-reference.webp",
+  "sha256": "f7f0f2f71489389709bfbbb0110af6e9d9704b30bc9a4dab4c05d013614db092",
+  "image_size": [
+    1080,
+    723
+  ],
+  "palette": [
+    "#000000",
+    "#009B39",
+    "#FFD100"
+  ],
+  "method": "geometric reconstruction: straight bands, circles, ellipses, square corners, overlapping color fills",
+  "aspect_ratio": "2:1",
+  "units_per_pixel": 5,
+  "units_per_em": 1000,
+  "side_bearing": 60,
+  "letter_gap": 120,
+  "letter_gap_reference": "N left green strip: 24 design pixels",
+  "space_advance": 475,
+  "line_advance": 713,
+  "line_gap_between_flags": 238,
+  "quadratic_conversion_error_units": 0.5,
+  "glyphs": {
+    "A": {
+      "box": [
+        26,
+        26,
+        215,
+        121
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 4
+    },
+    "B": {
+      "box": [
+        236,
+        26,
+        425,
+        121
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 4
+    },
+    "C": {
+      "box": [
+        446,
+        26,
+        635,
+        121
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 3
+    },
+    "D": {
+      "box": [
+        655,
+        26,
+        844,
+        121
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 3
+    },
+    "E": {
+      "box": [
+        865,
+        26,
+        1054,
+        121
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 6
+    },
+    "F": {
+      "box": [
+        26,
+        141,
+        215,
+        236
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    },
+    "G": {
+      "box": [
+        236,
+        141,
+        425,
+        236
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    },
+    "H": {
+      "box": [
+        446,
+        141,
+        634,
+        236
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    },
+    "I": {
+      "box": [
+        655,
+        141,
+        844,
+        236
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    },
+    "J": {
+      "box": [
+        865,
+        141,
+        1054,
+        236
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 3
+    },
+    "K": {
+      "box": [
+        26,
+        256,
+        215,
+        352
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    },
+    "L": {
+      "box": [
+        236,
+        256,
+        425,
+        352
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 4
+    },
+    "M": {
+      "box": [
+        446,
+        256,
+        634,
+        352
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    },
+    "N": {
+      "box": [
+        655,
+        256,
+        844,
+        352
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 6
+    },
+    "O": {
+      "box": [
+        865,
+        256,
+        1054,
+        352
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 3
+    },
+    "P": {
+      "box": [
+        26,
+        371,
+        215,
+        467
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 3
+    },
+    "Q": {
+      "box": [
+        236,
+        371,
+        425,
+        467
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    },
+    "R": {
+      "box": [
+        446,
+        371,
+        634,
+        467
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    },
+    "S": {
+      "box": [
+        655,
+        371,
+        844,
+        467
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 3
+    },
+    "T": {
+      "box": [
+        865,
+        371,
+        1054,
+        467
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 4
+    },
+    "U": {
+      "box": [
+        26,
+        487,
+        215,
+        582
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 3
+    },
+    "V": {
+      "box": [
+        236,
+        487,
+        425,
+        582
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 3
+    },
+    "W": {
+      "box": [
+        445,
+        487,
+        635,
+        582
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    },
+    "X": {
+      "box": [
+        655,
+        487,
+        844,
+        582
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    },
+    "Y": {
+      "box": [
+        865,
+        487,
+        1054,
+        582
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 4
+    },
+    "Z": {
+      "box": [
+        445,
+        602,
+        634,
+        697
+      ],
+      "width": 190,
+      "height": 95,
+      "advance": 1070,
+      "layer_count": 5
+    }
+  }
+}

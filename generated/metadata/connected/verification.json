@@ -1,0 +1,121 @@
+{
+  "pair_count": 676,
+  "cases_per_format": 814,
+  "formats": {
+    "ttf": {
+      "harfbuzz_version": "2.6.4",
+      "shaping_cases": 814,
+      "variants_checked": 104,
+      "edge_pixels_checked": 19760,
+      "default_calt": true,
+      "calt_off": true,
+      "manual_alternates": true,
+      "letter_advance": 950,
+      "space_advance": 475,
+      "line_advance": 713,
+      "kerning_pairs": 559,
+      "spacing_alternates": 2388,
+      "dark_counters": true,
+      "W_five_regions_alternate": true,
+      "I_crossbars_match_H": true,
+      "safe_negative_kerning": true
+    },
+    "woff": {
+      "harfbuzz_version": "2.6.4",
+      "shaping_cases": 814,
+      "variants_checked": 104,
+      "edge_pixels_checked": 19760,
+      "default_calt": true,
+      "calt_off": true,
+      "manual_alternates": true,
+      "letter_advance": 950,
+      "space_advance": 475,
+      "line_advance": 713,
+      "kerning_pairs": 559,
+      "spacing_alternates": 2388,
+      "dark_counters": true,
+      "W_five_regions_alternate": true,
+      "I_crossbars_match_H": true,
+      "safe_negative_kerning": true
+    },
+    "woff2": {
+      "harfbuzz_version": "2.6.4",
+      "shaping_cases": 814,
+      "variants_checked": 104,
+      "edge_pixels_checked": 19760,
+      "default_calt": true,
+      "calt_off": true,
+      "manual_alternates": true,
+      "letter_advance": 950,
+      "space_advance": 475,
+      "line_advance": 713,
+      "kerning_pairs": 559,
+      "spacing_alternates": 2388,
+      "dark_counters": true,
+      "W_five_regions_alternate": true,
+      "I_crossbars_match_H": true,
+      "safe_negative_kerning": true
+    }
+  },
+  "original_font_sha256": {
+    "fonts/JamaicanAlphabet.ttf": "085d69462bc166791a738104df0e3c387abed519892de1334c62bf8cc8dc9a21",
+    "fonts/JamaicanAlphabet.woff2": "1dce74e1aa952846aacda539e3427ee6f937e88d2c00be2d3c4f3515bb4e7639",
+    "fonts/JamaicanAlphabet.woff": "faf37cae8fa8ae43f25c5d89355472beba6377b42b860a7ffbf2747bb63b3435"
+  },
+  "native_freetype": {
+    "variants_checked": 104,
+    "edge_pixels_checked": 19760,
+    "pixel_mode": "BGRA",
+    "pixels_per_em": 200,
+    "result": "passed",
+    "dark_counters": true,
+    "I_crossbars": true,
+    "W_alternation": true,
+    "kerning_comparisons": 14,
+    "GA_corner_bridge": true,
+    "C_G_spacers_clean": true,
+    "CA_AD_full_strokes": true,
+    "single_corner_only": true,
+    "K_upper_arm_join": true,
+    "stroke_overlaps": {
+      "VE": 8,
+      "LA": 8,
+      "AZ": 12,
+      "ZY": 14.2
+    },
+    "full_gold_strokes": true
+  },
+  "fractional_seams": {
+    "join_cases": 5655,
+    "background_samples": 16965,
+    "gold_samples": 7400,
+    "pixels_per_em": [
+      40,
+      48,
+      52,
+      64,
+      80,
+      92,
+      100,
+      127,
+      200
+    ],
+    "x_pixel_phases": [
+      0,
+      0.125,
+      0.375,
+      0.625,
+      0.875
+    ],
+    "all_676_pairs_at": [
+      52,
+      92,
+      127
+    ],
+    "worst_rgb_plane_error": 4.4386,
+    "tolerance": 8,
+    "stroke_intersection_samples": 180,
+    "before_seam_cases_reproduced": 0,
+    "result": "passed"
+  }
+}

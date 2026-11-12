@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jamaican Alphabet — color font specimen</title>
+<style>
+@font-face {
+  font-family: "Jamaican Alphabet";
+  src: url("../../fonts/JamaicanAlphabet.woff2") format("woff2"),
+       url("../../fonts/JamaicanAlphabet.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 1200px; padding: 48px 32px; background: #f8f6ef; color: #172d24; font: 16px/1.5 system-ui, sans-serif; }
+h1 { margin: 0; font-size: 40px; letter-spacing: -1px; }
+p { max-width: 720px; }
+a { color: #176b3c; }
+.eyebrow { text-transform: uppercase; font-size: 12px; letter-spacing: 2px; }
+.font { font-family: "Jamaican Alphabet"; font-weight: 400; font-synthesis: none; letter-spacing: 0; word-spacing: 0; line-height: .713; }
+label { display: block; margin: 32px 0 10px; font-size: 14px; }
+textarea { display: block; width: 100%; padding: 20px; border: 1px solid #c8cfc7; border-radius: 8px; background: white; font-size: 82px; line-height: .713; resize: vertical; }
+.grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; margin: 32px 0; }
+.card { padding: 12px 8px; background: white; border: 1px solid #e3e4db; border-radius: 8px; }
+.card small { display: block; padding: 0 8px 4px; color: #59675e; }
+.letter { display: block; font-size: clamp(60px, 15vw, 180px); line-height: .713; }
+.note { font-size: 14px; color: #59675e; }
+@media(max-width: 650px) { body { padding: 24px 16px; } h1 { font-size: 32px; } .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } .letter { font-size: 21vw; } textarea { font-size: 52px; } }
+</style>
+<p class="eyebrow">Jamaican Flag Fonts / Alphabet</p>
+<h1>Jamaican Alphabet</h1>
+<p>A geometric color font based on the supplied alphabet image. Smooth curves, square corners, and exact 2:1 flags. Letters are separated by the width of N’s left green strip, spaces are half a flag wide, and rows have a half-height gap. Black, green, and gold are embedded in the font itself.</p>
+<p><a href="../../fonts/JamaicanAlphabet.ttf" download>Download TTF</a> · <a href="../../fonts/JamaicanAlphabet.woff2" download>Download WOFF2</a> · <a href="../../generated/previews/source-comparison.png">Compare with source</a> · <a href="../../generated/previews/spaced-alphabet.png">Alphabet spacing</a> · <a href="../../generated/previews/curve-details.png">Curve details</a></p>
+<label for="sample">Type letters A–Z. Lowercase uses the same designs; a space adds half a flag’s width.</label>
+<textarea id="sample" class="font" rows="2" spellcheck="false" aria-label="Try the Jamaican Alphabet font">JAMAICA
+HELLO WORLD</textarea>
+<div class="grid" id="alphabet" aria-label="Alphabet specimen"></div>
+<p class="note">26 designs with lowercase aliases and spaces · COLR/CPAL vector color · Source palette: #000000 / #009B39 / #FFD100.</p>
+<script>
+for (const letter of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+  const card = document.createElement('div');
+  card.className = 'card';
+  const label = document.createElement('small');
+  label.textContent = letter + ' / ' + letter.toLowerCase();
+  const glyph = document.createElement('span');
+  glyph.className = 'font letter';
+  glyph.textContent = letter;
+  card.append(label, glyph);
+  document.getElementById('alphabet').append(card);
+}
+document.fonts.ready.then(() => { document.documentElement.dataset.fontLoaded = document.fonts.check('100px "Jamaican Alphabet"'); });
+</script>
+</html>

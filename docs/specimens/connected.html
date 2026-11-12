@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jamaican Connected — contextual color font</title>
+<style>
+@font-face {
+  font-family: "Jamaican Connected";
+  src: url("../../fonts/JamaicanConnected.woff2") format("woff2"),
+       url("../../fonts/JamaicanConnected.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+* { box-sizing: border-box; }
+body { --matching: 1; --kerning: 1; margin: 0 auto; max-width: 1200px; padding: 40px 28px; color: #172d24; background: #f8f6ef; font: 16px/1.5 system-ui, sans-serif; }
+h1 { margin: 0; font-size: clamp(32px, 5vw, 48px); letter-spacing: -1px; }
+h2 { margin-top: 36px; font-size: 22px; }
+p { max-width: 760px; }
+a { color: #176b3c; }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; }
+.connected { font-family: "Jamaican Connected", sans-serif; font-weight: 400; font-synthesis: none; font-feature-settings: "calt" var(--matching), "kern" var(--kerning); font-kerning: normal; letter-spacing: 0; word-spacing: 0; line-height: .713; }
+.features-off { --matching: 0; }
+.kerning-off { --kerning: 0; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin: 24px 0 12px; }
+.toolbar label { cursor: pointer; }
+input[type="checkbox"] { accent-color: #009b39; }
+textarea { display: block; width: 100%; padding: 24px; border: 1px solid #c8cfc7; border-radius: 8px; background: white; font-size: 92px; resize: vertical; }
+.sample { overflow-x: auto; margin: 14px 0; padding: 22px 16px; background: white; border: 1px solid #e3e4db; border-radius: 8px; }
+.sample small { display: block; margin-bottom: 10px; color: #59675e; }
+.sample .connected { display: block; white-space: pre; font-size: clamp(48px, 7vw, 80px); }
+.note { color: #59675e; font-size: 14px; }
+select { padding: 8px; border: 1px solid #c8cfc7; border-radius: 4px; background: white; font: inherit; }
+#variant { display: inline-block; font-size: 200px; font-feature-settings: "calt" 0, "aalt" 1; }
+.variant-box { padding: 24px; background: white; border: 1px solid #e3e4db; border-radius: 8px; }
+@media(max-width: 600px) { body { padding: 24px 16px; } textarea { font-size: 52px; padding: 16px; } #variant { font-size: 170px; } }
+</style>
+<p class="eyebrow">Jamaican Flag Fonts / Connected</p>
+<h1>Jamaican Connected</h1>
+<p>Type ordinary letters. The font matches neighboring background colors, overlaps full strokes at shared gold corners, and adjusts spacing for display text. Only one corner connects per pair, keeping letters readable. Enclosed sections default to black; W alternates all five background regions.</p>
+<p><a href="../../fonts/JamaicanConnected.ttf" download>Download TTF</a> · <a href="../../fonts/JamaicanConnected.woff2" download>Download WOFF2</a> · <a href="../../generated/previews/connected/samples.png">Rendered samples</a> · <a href="../../generated/previews/connected/native-kerning-proof.png">Kerning comparison</a> · <a href="../../generated/previews/connected/fractional-seams.png">Hairline gaps</a> · <a href="../../generated/previews/connected/BIW-details.png">B / I / W details</a> · <a href="../../README.md#font-features">Font notes</a> · <a href="alphabet.html">Original font</a></p>
+<div class="toolbar">
+  <label><input id="calt" type="checkbox" checked> Match colors automatically</label>
+  <label><input id="kern" type="checkbox" checked> Optical kerning</label>
+  <span class="note">Compare color matching and optical spacing independently.</span>
+</div>
+<label for="text">Try letters A–Z. Lowercase uses the same designs; a space breaks the color chain.</label>
+<textarea id="text" class="connected" rows="3" spellcheck="false" aria-label="Try Jamaican Connected">JAMAICA
+HELLO WORLD
+JTLJTLJTL</textarea>
+<p class="note">Words start with black on the left. Most letters switch colors; W returns to the same outgoing color after alternating its five regions. X always shows the original Jamaican flag and passes black to the next letter. Corner joins stay connected, C/G get extra room, and spaces remain half a flag wide. Includes A–Z, lowercase aliases, and spaces.</p>
+<div class="sample"><small>Repeated letters</small><span class="connected">OOOOOO HHHHHH</span></div>
+<div class="sample"><small>Redrawn full-height J, T, and L</small><span class="connected">JTLJTLJTL</span></div>
+<div class="sample"><small>Full-stroke joins, single-corner connections, and optical spacing</small><span class="connected">CA AD CD CE FE KE XZ</span></div>
+<div class="sample"><small>Full-stroke corner connections · <a href="../../generated/previews/connected/corner-overlaps.png">View the corner proof</a></small><span class="connected">AB AD AE AS WB XB</span></div>
+<div class="sample"><small>Full strokes overlapping at their natural intersections · <a href="../../generated/previews/connected/pair-refinements.png">View the refinement proof</a></small><span class="connected">VE LAZY</span></div>
+<div class="sample"><small>Dark counters, full-height I, and alternating W</small><span class="connected">BIB IW AWAWA</span></div>
+<div class="sample"><small>Alphabet</small><span class="connected">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span></div>
+<h2>Inspect a variant</h2>
+<p>Every letter has four left/right color choices. All X choices retain the original flag. Enclosed sections use black; black → black variants use green. W uses black → black or green → green automatically to alternate all five regions.</p>
+<div class="toolbar">
+  <label for="letter">Letter</label><select id="letter" aria-label="Variant letter"></select>
+  <label for="state">Side colors</label>
+  <select id="state">
+    <option value="1">Black → Green</option>
+    <option value="2">Green → Black</option>
+    <option value="3">Black → Black</option>
+    <option value="4">Green → Green</option>
+  </select>
+</div>
+<div class="variant-box"><span id="variant" class="connected">O</span></div>
+<p><a href="../../generated/previews/connected/native-variant-proof.png">View the native FreeType proof for B, I, W, O, C, N, T, L, and J</a></p>
+<p class="note">Visual design by <a href="https://www.reddit.com/user/VelvetOnion/">u/VelvetOnion</a>, via <a href="https://www.reddit.com/r/vexillologycirclejerk/s/Bqage66kXN">r/vexillologycirclejerk</a>. This separate font adapts the artwork for contextual color matching.</p>
+<script>
+const letter = document.getElementById('letter');
+const state = document.getElementById('state');
+const variant = document.getElementById('variant');
+for (const char of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+  const option = document.createElement('option');
+  option.value = option.textContent = char;
+  option.selected = char === 'O';
+  letter.append(option);
+}
+function updateVariant() {
+  variant.textContent = letter.value;
+  variant.style.fontFeatureSettings = '"calt" 0, "aalt" ' + state.value;
+}
+letter.addEventListener('change', updateVariant);
+state.addEventListener('change', updateVariant);
+document.getElementById('calt').addEventListener('change', event => {
+  document.body.classList.toggle('features-off', !event.target.checked);
+});
+document.getElementById('kern').addEventListener('change', event => {
+  document.body.classList.toggle('kerning-off', !event.target.checked);
+});
+document.fonts.ready.then(() => {
+  document.documentElement.dataset.fontLoaded = document.fonts.check('100px "Jamaican Connected"');
+});
+</script>
+</html>

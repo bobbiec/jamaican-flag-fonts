@@ -1,0 +1,96 @@
+{
+  "background": "#f1f1e6",
+  "max_width": 900,
+  "headings_and_subheadings": "HTML and Markdown text outside the images",
+  "typing_line_metrics": {
+    "flag_height_px": 57,
+    "top_to_top_px": 85.5,
+    "visible_gap_px": 28.5
+  },
+  "renderer": "HarfBuzz + FreeType; SVG contours for the R construction preview",
+  "inputs": {
+    "fonts/JamaicanAlphabet.ttf": "085d69462bc166791a738104df0e3c387abed519892de1334c62bf8cc8dc9a21",
+    "fonts/JamaicanConnected.ttf": "66e6673dcd8b1d1155d6047ecebb542f67a482c40dc3f8aea9c11ca059b5d04b",
+    "assets/reference-fonts/tapered-joins.ttf": "9915ceae961b3809ca4e18014529452c65b717a0b008bd46fa4555f8407df098",
+    "assets/reference-fonts/before-seam-protection.ttf": "9b2287c291a5034102fab61476fbedc7c8f709b83089b6967527068ebaddb1e0",
+    "src/geometry.py": "883d704a4f2025941bf2c35d155570dc8c16e5e6537c6a9abc34c41f136ed8ae"
+  },
+  "hairline_comparison": [
+    {
+      "label": "Before join fix",
+      "pair": "CD",
+      "ppem": 127,
+      "phase": 0.125,
+      "plane_error": 145.9259
+    },
+    {
+      "label": "After join fix",
+      "pair": "CD",
+      "ppem": 127,
+      "phase": 0.125,
+      "plane_error": 1.7193
+    }
+  ],
+  "assets": [
+    {
+      "stem": "01-r-definition",
+      "title": "A letter defined by shapes",
+      "caption": "R\u2019s construction from src/geometry.py, with bowl(p_outer, p_inner) expanded into its two paint calls. Each highlighted line previews a path or applies a fill. The outer path is painted gold, then the inner path is painted green.",
+      "gif": true
+    },
+    {
+      "stem": "02-ijlt",
+      "title": "Preparing the letters to connect",
+      "caption": "I, J, L, and T in the Original and Connected fonts at identical flag-core dimensions. Dotted red outlines on the Connected forms mark the original gold silhouettes.",
+      "gif": false
+    },
+    {
+      "stem": "03-color-variants",
+      "title": "The two automatic color choices",
+      "caption": "B in BG and GB: the two forms selected for ordinary letters by automatic color matching. The gold outline stays the same while the incoming and outgoing fields swap colors.",
+      "gif": false
+    },
+    {
+      "stem": "04-jamaica-colors",
+      "title": "Matching the colors in JAMAICA",
+      "caption": "Identical geometry and spacing in both states. Only the color choices change, matching each letter\u2019s incoming field to its neighbor\u2019s outgoing field.",
+      "gif": true
+    },
+    {
+      "stem": "05-w-and-x",
+      "title": "Two color exceptions",
+      "caption": "W alternates across five regions and returns to its incoming color. X always keeps the original flag.",
+      "gif": false
+    },
+    {
+      "stem": "06-relaxed-spacing",
+      "title": "Spacing and joining RELAXED",
+      "caption": "Before: uniform six-design-pixel gaps with incoming join and overlap forms omitted. After: complete contextual shaping and optical spacing. A shared curved arrow marks all bottom joins across L\u2013A\u2013X\u2013E\u2013D; the upper arrow marks the open XE and ED top corners that preserve readability. The color choices stay fixed.",
+      "gif": false
+    },
+    {
+      "stem": "06b-cool-spacing",
+      "title": "Optical spacing in COOL",
+      "caption": "Before and after the OO pair-spacing adjustment. Only the first O\u2019s advance changes, from 950 to 830 font units: the second O moves 24 design pixels closer. Red dotted lines span the gold-to-gold gap in both rows. Colors, glyph forms, and the other pair adjustments stay fixed.",
+      "gif": false
+    },
+    {
+      "stem": "07-lazy-overlaps",
+      "title": "Let the strokes meet: LAZY",
+      "caption": "Actual earlier tapered font versus the finished full-stroke overlaps. Enlargements show the LA, AZ, and ZY intersections.",
+      "gif": true
+    },
+    {
+      "stem": "08-hairlines",
+      "title": "A hairline between perfectly touching shapes",
+      "caption": "Same text, 127 px/em, and 0.125 px horizontal origin before and after fixing the hairline gap. Nearest-neighbor enlargements preserve the individual pixels.",
+      "gif": false
+    },
+    {
+      "stem": "09-still-text",
+      "title": "Different glyphs. The same text.",
+      "caption": "Illustrated typing, selection, and copy sequence, rendered from actual HarfBuzz-shaped text. The gap between HELLO and JAMAICA is half a flag\u2019s height. This is an illustration rather than a browser recording.",
+      "gif": true
+    }
+  ]
+}
